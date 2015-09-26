@@ -16,7 +16,7 @@ class Pest
     public $curl_opts = array(
         CURLOPT_RETURNTRANSFER => true, // return result instead of echoing
         CURLOPT_SSL_VERIFYPEER => true, // Always verify SSL Peer
-        CURLOPT_SSL_VERIFYHOST => true, // Always verify SSL Host. Note this is forced to false by libcurl if VERIFYPEER is false, too.
+        CURLOPT_SSL_VERIFYHOST => 2, // Always verify SSL Host. Note this is forced to false by libcurl if VERIFYPEER is false, too.
         CURLOPT_FOLLOWLOCATION => false, // never follow redirects, Location: headers
         CURLOPT_MAXREDIRS => 10, // but dont redirect more than 10 times
         CURLOPT_HTTPHEADER => array()
