@@ -30,6 +30,7 @@ See the info on PestXML (below) if you're working with XML-based REST services a
 PestJSON if you're working with JSON.
 
     <?php
+    use \educoder\Pest\Pest;
 
     $pest = new Pest('http://example.com');
 
@@ -80,6 +81,7 @@ return XML data. Rather than returning the raw response body as a string, PestXM
 try to parse the service's response into a [SimpleXML](http://php.net/manual/en/book.simplexml.php) object.
 
 	<?php
+        use \educoder\Pest\Pest;
 
 	$pest = new Pest('http://example.com');
 
