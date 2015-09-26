@@ -1,4 +1,5 @@
 <?php
+namespace educoder\Pest;
 /**
  * Pest is a REST client for PHP.
  * PestXML adds XML-specific functionality to Pest, automatically converting

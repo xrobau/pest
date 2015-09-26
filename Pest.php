@@ -1,4 +1,5 @@
 <?php
+namespace educoder\Pest;
 /**
  * Pest is a REST client for PHP.
  *
@@ -54,7 +55,7 @@ class Pest
     public function __construct($base_url)
     {
         if (!function_exists('curl_init')) {
-            throw new Exception('CURL module not available! Pest requires CURL. See http://php.net/manual/en/book.curl.php');
+            throw new \Exception('CURL module not available! Pest requires CURL. See http://php.net/manual/en/book.curl.php');
         }
 
         /*
@@ -540,7 +541,7 @@ class Pest
     }
 }
 
-class Pest_Exception extends Exception
+class Pest_Exception extends \Exception
 {}
 class Pest_UnknownResponse extends Pest_Exception
 {}
