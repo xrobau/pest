@@ -44,7 +44,7 @@ class PestJSON extends Pest
      */
     public function post($url, $data, $headers = array())
     {
-        return parent::post($url, $this->jsonEncode($data), $headers);
+        return parent::post($url, $data, $headers);
     }
 
     /**
@@ -57,7 +57,7 @@ class PestJSON extends Pest
      */
     public function put($url, $data, $headers = array())
     {
-        return parent::put($url, $this->jsonEncode($data), $headers);
+        return parent::put($url, $data, $headers);
     }
 
     /**
@@ -95,7 +95,7 @@ class PestJSON extends Pest
 
         if ($ret === null && $this->hasJsonDecodeFailed() && $this->throwJsonExceptions) {
             throw new Pest_Json_Decode(
-                'Decoding error: ' . $this->getLastJsonErrorMessage(),
+                "Decoding error of '$data': " . $this->getLastJsonErrorMessage(),
                 $this->getLastJsonErrorCode()
             );
         }
@@ -195,7 +195,6 @@ class PestJSON extends Pest
     protected function prepRequest($opts, $url)
     {
         $opts[CURLOPT_HTTPHEADER][] = 'Accept: application/json';
-        $opts[CURLOPT_HTTPHEADER][] = 'Content-Type: application/json';
         return parent::prepRequest($opts, $url);
     }
 }
