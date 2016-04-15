@@ -1,7 +1,7 @@
 {
-    "name": "educoder/pest",
-    "description": "A proper REST client for PHP.",
-    "homepage": "https://github.com/educoder/pest",
+    "name": "xrobau/pest",
+    "description": "A proper REST client for PHP. (Forked from abandoned Educoder/pest)",
+    "homepage": "https://github.com/xrobau/pest",
     "license": "MIT",
     "authors": [
         {
@@ -11,6 +11,10 @@
         {
             "name": "Donald Sipe",
             "email": "donald.sipe@gmail.com"
+        },
+	{
+            "name": "Rob Thomas",
+            "email": "xrobau@gmail.com"
         }
     ],
     "require": {
