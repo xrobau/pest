@@ -1,5 +1,5 @@
 <?php
-namespace educoder\Pest;
+namespace xrobau\Pest;
 
 /**
  * Pest is a REST client for PHP.
@@ -19,7 +19,7 @@ namespace educoder\Pest;
  * If you don't want to have exceptions thrown when there are errors encoding or
  * decoding JSON set the `throwEncodingExceptions` property to FALSE.
  *
- * See http://github.com/educoder/pest for details.
+ * See http://github.com/xrobau/pest for details.
  *
  * This code is licensed for use, modification, and distribution
  * under the terms of the MIT License (see http://en.wikipedia.org/wiki/MIT_License)

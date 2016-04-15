@@ -1,9 +1,9 @@
 <?php
-namespace educoder\Pest;
+namespace xrobau\Pest;
 /**
  * Pest is a REST client for PHP.
  *
- * See http://github.com/educoder/pest for details.
+ * See http://github.com/xrobau/pest for details.
  *
  * This code is licensed for use, modification, and distribution
  * under the terms of the MIT License (see http://en.wikipedia.org/wiki/MIT_License)

@@ -1,5 +1,5 @@
 <?php
-namespace educoder\Pest;
+namespace xrobau\Pest;
 /**
  * Pest is a REST client for PHP.
  * PestXML adds XML-specific functionality to Pest, automatically converting
@@ -12,7 +12,7 @@ namespace educoder\Pest;
  * responses, expecting that these too are in XML (i.e. the contents of
  * the first <error></error> tag in the response is assumed to be the error mssage)
  *
- * See http://github.com/educoder/pest for details.
+ * See http://github.com/xrobau/pest for details.
  *
  * This code is licensed for use, modification, and distribution
  * under the terms of the MIT License (see http://en.wikipedia.org/wiki/MIT_License)

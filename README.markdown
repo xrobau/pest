@@ -15,7 +15,7 @@ To install Pest, use the following composer `require` statement:
 ```
 {
     "require": {
-        "educoder/pest": "1.0.0"
+        "xrobau/pest": "1.0.0"
     }
 }
 
@@ -30,7 +30,7 @@ See the info on PestXML (below) if you're working with XML-based REST services a
 PestJSON if you're working with JSON.
 
     <?php
-    use \educoder\Pest\Pest;
+    use \xrobau\Pest\Pest;
 
     $pest = new Pest('http://example.com');
 
@@ -81,7 +81,7 @@ return XML data. Rather than returning the raw response body as a string, PestXM
 try to parse the service's response into a [SimpleXML](http://php.net/manual/en/book.simplexml.php) object.
 
 	<?php
-        use \educoder\Pest\Pest;
+        use \xrobau\Pest\Pest;
 
 	$pest = new Pest('http://example.com');
 
@@ -98,8 +98,8 @@ Similarly, **PestJSON** is a JSON-centric version of Pest.
 
 Much more detailed examples are available in the `examples` directory:
 
-* [Rollcall Example](http://github.com/educoder/pest/blob/master/examples/rollcall_example.php)
-* [OpenStreetMap Example](http://github.com/educoder/pest/blob/master/examples/open_street_map_example.php)
+* [Rollcall Example](http://github.com/xrobau/pest/blob/master/examples/rollcall_example.php)
+* [OpenStreetMap Example](http://github.com/xrobau/pest/blob/master/examples/open_street_map_example.php)
 
 
 TODO
